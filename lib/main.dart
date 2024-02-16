@@ -77,118 +77,146 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-       body: Container(
-         width: double.maxFinite,
-         height: double.maxFinite,
-         padding: const EdgeInsets.all(8),
-         child: Row(
-             children: [
-               Expanded(
-                 flex: 1,
-                 child: Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
-                   children: [
-                     Expanded(
-                       flex: 4,
-                       child: Container(
-                         width: double.maxFinite,
-                         height: double.maxFinite,
-                         margin: const EdgeInsets.only(right:8, bottom:8),
-                         color: Colors.blueAccent,
-                         alignment: Alignment.center,
-                       ),
-                     ),
-                     Expanded(
-                       flex: 1,
-                       child: Container(
-                         constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                         margin: const EdgeInsets.only(bottom:8, right:8),
-                         width: double.infinity,
-                         height: double.infinity,
-                         color: Colors.indigoAccent,
-                         alignment: Alignment.center,
-                       )
-                     ),
-                     Expanded(
-                       flex: 1,
-                       child: Container(
-                         constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                         margin: const EdgeInsets.only(bottom:8, right:8),
-                         width: double.infinity,
-                         height: double.infinity,
-                         color: Colors.blueGrey,
-                         alignment: Alignment.center,
-                       )
-                     ),
-                     Expanded(
-                       flex: 4,
-                       child: Container(
-                         constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                         margin: const EdgeInsets.only(right:8),
-                         width: double.infinity,
-                         height: double.infinity,
-                         color: Colors.lightBlueAccent,
-                         alignment: Alignment.center,
-                       ),
-                     )
-                   ],
-                 ),
-               ),
-               Expanded(
-                 flex: 1,
-                 child: Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
-                   children: [
-                     Expanded(
-                       flex: 4,
-                       child: Container(
-                         constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                         margin: const EdgeInsets.only(bottom:8),
-                         width: double.infinity,
-                         height: double.infinity,
-                         color: Colors.redAccent,
-                         alignment: Alignment.center,
-                       ),
-                     ),
-                     Expanded(
-                         flex: 1,
-                         child: Container(
-                           constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                           margin: const EdgeInsets.only(bottom:8),
-                           width: double.infinity,
-                           height: double.infinity,
-                           color: Colors.orangeAccent,
-                           alignment: Alignment.center,
-                         )
-                     ),
-                     Expanded(
-                         flex: 1,
-                         child: Container(
-                           constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                           margin: const EdgeInsets.only(bottom:8),
-                           width: double.infinity,
-                           height: double.infinity,
-                           color: Colors.brown,
-                           alignment: Alignment.center,
-                         )
-                     ),
-                     Expanded(
-                       flex: 4,
-                       child: Container(
-                         constraints: const BoxConstraints(maxWidth: double.maxFinite, maxHeight: double.maxFinite),
-                         //margin: const EdgeInsets.only(right:8),
-                         width: double.infinity,
-                         height: double.infinity,
-                         color: Colors.deepPurpleAccent,
-                         alignment: Alignment.center,
-                       ),
-                     )
-                   ],
-                 ),
-               )
-             ],
-           ),
-       ),
+      body: Container(
+        width: double.maxFinite,
+        height: double.maxFinite,
+        padding: const EdgeInsets.all(8),
+        child: Row(
+          children: [
+            Expanded(
+              flex: 1,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                        width: double.maxFinite,
+                        height: double.maxFinite,
+                        margin: const EdgeInsets.only(right: 8, bottom: 8),
+                        color: Colors.blueAccent,
+                        alignment: Alignment.center,
+                        child: Text(
+                          '1',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 30),
+                        )),
+                  ),
+                  Expanded(
+                      flex: 1,
+                      child: Container(
+                          constraints: const BoxConstraints(
+                              maxWidth: double.maxFinite,
+                              maxHeight: double.maxFinite),
+                          margin: const EdgeInsets.only(bottom: 8, right: 8),
+                          width: double.infinity,
+                          height: double.infinity,
+                          color: Colors.indigoAccent,
+                          alignment: Alignment.center,
+                          child: Text('2',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 30)))),
+                  Expanded(
+                      flex: 1,
+                      child: Container(
+                          constraints: const BoxConstraints(
+                              maxWidth: double.maxFinite,
+                              maxHeight: double.maxFinite),
+                          margin: const EdgeInsets.only(bottom: 8, right: 8),
+                          width: double.infinity,
+                          height: double.infinity,
+                          color: Colors.blueGrey,
+                          alignment: Alignment.center,
+                          child: Text('3',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 30)))),
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                        constraints: const BoxConstraints(
+                            maxWidth: double.maxFinite,
+                            maxHeight: double.maxFinite),
+                        margin: const EdgeInsets.only(right: 8),
+                        width: double.infinity,
+                        height: double.infinity,
+                        color: Colors.lightBlueAccent,
+                        alignment: Alignment.center,
+                        child: Text('4',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 30))),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                        constraints: const BoxConstraints(
+                            maxWidth: double.maxFinite,
+                            maxHeight: double.maxFinite),
+                        margin: const EdgeInsets.only(bottom: 8),
+                        width: double.infinity,
+                        height: double.infinity,
+                        color: Colors.redAccent,
+                        alignment: Alignment.center,
+                        child: Text('5',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 30))),
+                  ),
+                  Expanded(
+                      flex: 1,
+                      child: Container(
+                          constraints: const BoxConstraints(
+                              maxWidth: double.maxFinite,
+                              maxHeight: double.maxFinite),
+                          margin: const EdgeInsets.only(bottom: 8),
+                          width: double.infinity,
+                          height: double.infinity,
+                          color: Colors.orangeAccent,
+                          alignment: Alignment.center,
+                          child: Text('6',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 30)))),
+                  Expanded(
+                      flex: 1,
+                      child: Container(
+                          constraints: const BoxConstraints(
+                              maxWidth: double.maxFinite,
+                              maxHeight: double.maxFinite),
+                          margin: const EdgeInsets.only(bottom: 8),
+                          width: double.infinity,
+                          height: double.infinity,
+                          color: Colors.brown,
+                          alignment: Alignment.center,
+                          child: Text('7',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 30)))),
+                  Expanded(
+                    flex: 4,
+                    child: Container(
+                        constraints: const BoxConstraints(
+                            maxWidth: double.maxFinite,
+                            maxHeight: double.maxFinite),
+                        //margin: const EdgeInsets.only(right:8),
+                        width: double.infinity,
+                        height: double.infinity,
+                        color: Colors.deepPurpleAccent,
+                        alignment: Alignment.center,
+                        child: Text('8',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 30))),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
