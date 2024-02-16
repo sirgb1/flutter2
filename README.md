@@ -4,3 +4,5 @@
 
 
 # С цифрами
+![image](https://github.com/sirgb1/flutter2/assets/96747393/8b1e4bc6-7a54-4c51-8f9e-20bf036c53fb)
+![image](https://github.com/sirgb1/flutter2/assets/96747393/b40aa39a-8441-4956-bbe9-4da239591908)
